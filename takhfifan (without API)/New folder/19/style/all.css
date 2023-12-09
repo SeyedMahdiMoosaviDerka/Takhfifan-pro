@@ -1,0 +1,15 @@
+﻿body {
+}
+
+@font-face {
+    font-family: 'Mj flow';
+    src: url('../fonts/Mj flow.ttf') format('truetype');
+}
+
+#all {
+    width: 300px;
+                                margin: 100px auto;
+                padding: 30px;
+    border: 1px solid red;
+    text-align: center;
+    font-family: 'Mj flow';}

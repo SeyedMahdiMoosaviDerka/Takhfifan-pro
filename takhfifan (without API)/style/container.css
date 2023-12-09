@@ -1,0 +1,213 @@
+.main-container {
+  width: 100%;
+  /* height: 500px; */
+  font-weight: normal;
+  background-color: #f0f0f0;
+
+  padding-bottom: 30px;
+}
+
+.main-container > h1 {
+  font-size: 20px;
+  color: #333;
+  padding: 20px 10px;
+}
+.main-container > .center {
+  display: flex;
+  height: 80%;
+  gap: 15px;
+  margin: 0 10px;
+}
+.main-container > .center > .side {
+  width: 25%;
+  height: auto;
+}
+
+/* side */
+
+.content > .search-store {
+  padding: 12px;
+  width: 90%;
+  border-radius: 5px;
+  margin: 30px 10px;
+  border: 1px solid #ccc;
+  background: rgb(251, 248, 248) url("../images/icon/search.PNG") 5% 50%
+    no-repeat;
+  background-size: 9%;
+  font-size: 16px;
+}
+
+/* offer & container */
+.main-container > .center > .content {
+  width: 75%;
+  height: auto;
+}
+.content > .order,
+.content > .container-list {
+  width: 100%;
+  background: #fff;
+}
+.content > .order {
+  height: 50px;
+  margin: 10px 0 22px 0;
+  display: flex;
+  border: 1px solid #dcdcdc;
+  box-shadow: 1px 1px 10px #d2d2d2;
+}
+
+.order-right-child {
+  width: 70%;
+  height: 100%;
+  border: 0 none;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 20px;
+  color: #333;
+}
+.order-right-child > .title {
+  font-size: 14px;
+  padding-right: 20px;
+  line-height: 40px;
+}
+.order-right-child > input {
+  display: none;
+}
+.order-right-child > label {
+  margin-right: 20px;
+  cursor: pointer;
+  line-height: 40px;
+}
+.order-right-child > input:checked + label {
+  color: #49c668;
+  font-size: 18px;
+  border-bottom: 2px solid red;
+}
+.order-left-child {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.order-left-child > .line:hover,
+.order-left-child > .square:hover {
+  transform: scale(1.2);
+}
+.order-left-child > .line {
+  width: 20%;
+  height: 80%;
+  background: url("../images/icon/line.png") no-repeat 50%;
+  background-size: 40%;
+  cursor: pointer;
+  border-right: 1px solid black;
+}
+.order-left-child > .square {
+  width: 20%;
+  height: 80%;
+  background: url("../images/icon/square.PNG") no-repeat 50% 30%;
+  background-size: 65%;
+  cursor: pointer;
+}
+
+.content > .container-list {
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #f0f0f0;
+}
+.container-list > .items {
+  background-color: #fff;
+  color: #212529;
+  width: 100%;
+  height: 250px;
+  padding: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: 1px solid #dcdcdc;
+  box-shadow: 1px 1px 10px #d2d2d2;
+
+  display: flex;
+  flex-flow: row nowrap;
+}
+/* .items > .items-picture {
+  flex: 1;
+  height: 90%;
+} */
+.items > .itemsPicture {
+  width: 30%;
+  height: 90%;
+}
+.items > .itemsContent {
+  width: 70%;
+  padding: 10px 20px;
+}
+.items > .itemsContent > p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.items > .itemsContent > .object {
+  margin-bottom: 40px;
+}
+
+.items > .itemsContent > .topItems {
+  margin: 30px 0 5px 0;
+  border-bottom: 2px solid #dcdcdc;
+  padding-bottom: 5px;
+  display: flex;
+  font-size: 13px;
+}
+.topItems > .location {
+  width: 85%;
+  padding-right: 25px;
+  background: url("../images/icon/04.PNG") no-repeat 100%;
+  background-size: 22px;
+}
+.topItems > .stock {
+  padding-right: 30px;
+  width: 10%;
+  background: url("../images/icon/star.PNG") no-repeat 80%;
+  background-size: 20px;
+}
+.topItems > .sale {
+  width: 5%;
+}
+.items > .itemsContent > .bottomItems {
+  display: flex;
+  gap: 10px;
+}
+.items > .itemsContent > .bottomItems > span {
+  padding: 10px 0;
+}
+.bottomItems > .buy {
+  width: 45%;
+}
+.bottomItems > .price {
+  width: 10%;
+  font-size: 12px;
+  margin: 2px 0 0 -15px;
+  text-decoration: line-through;
+}
+.bottomItems > .discount {
+  width: 15%;
+}
+.bottomItems > .discountPercent {
+  width: 8%;
+  background: #e54363;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+.bottomItems > .property {
+  font-size: 14px;
+  width: 20%;
+  background: #49c668;
+  border-radius: 5px;
+  text-align: center;
+  padding: 4px;
+  color: #fff;
+
+  line-height: 30px;
+}

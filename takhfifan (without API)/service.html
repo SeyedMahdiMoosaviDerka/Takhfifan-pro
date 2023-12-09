@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>خرید بلیط تخفیفان</title>
+
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/acar.css" />
+    <link rel="stylesheet" href="style/container.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/modal.css" />
+  </head>
+  <body>
+    <header class="headers">
+      <div class="top-header">
+        <div class="logo">
+          <div class="">
+            <img src="images/logo/logoTakhfifan.png" alt="لوگوی سایت" />
+          </div>
+        </div>
+
+        <div class="search">
+          <div class="location">
+            <span class="location-pic"></span>
+            <span>تهران</span>
+            <span class="location-click">
+              <div class="location-city">
+                <span>تهران</span>
+                <span>ساری</span>
+                <span>مشهد</span>
+                <span>اصفهان</span>
+                <span>کرج</span>
+                <span>کیش</span>
+              </div>
+            </span>
+          </div>
+
+          <input
+            id="search"
+            type="text"
+            placeholder="جستجو : رستوران،باشگاه انقلاب..."
+          />
+
+          <div class="search-button">
+            <button></button>
+          </div>
+        </div>
+
+        <div class="login">
+          <span>ثبت نام</span>
+          <span>/</span>
+          <span>ورود</span>
+          <span class="login-pic"></span>
+        </div>
+        <div class="basket" id="basketModal">
+          <img
+            src="images/icon/basket2.png"
+            alt="سبد خرید"
+            onclick="openCart()"
+          />
+          <span class="basket-num">0</span>
+        </div>
+      </div>
+      <nav class="bottom-header">
+        <section class="right">
+          <div class="categury">
+            <div class="categurys-line"></div>
+            <a href="#" class="categurys-option">
+              همه دسته‌ بندی‌ها
+              <ul class="categurys-box">
+                <li class="categurys-itemes game">
+                  تفریح و ورزش
+                  <ul class="categurys-box-child">
+                    <li class="categurys-itemes-child">استخر</li>
+                    <li class="categurys-itemes-child">شهر بازی</li>
+                    <li class="categurys-itemes-child">اتاق فرار</li>
+                    <li class="categurys-itemes-child">بازی‌ های گروهی</li>
+                    <li class="categurys-itemes-child">ورزش‌ های هوایی</li>
+                    <li class="categurys-itemes-child">باشگاه ورزشی</li>
+                  </ul>
+                </li>
+                <li class="categurys-itemes food">رستوران و کافه</li>
+                <li class="categurys-itemes art">تئاتر و هنر</li>
+                <li class="categurys-itemes medical">پزشکی و سلامت</li>
+                <li class="categurys-itemes online">فروشگاه های و اینترنتی</li>
+                <li class="categurys-itemes ofline">فروشگاه های و حضوری</li>
+                <li class="categurys-itemes travel">تور و سفر</li>
+                <li class="categurys-itemes make-up">زیبایی و آرایش</li>
+                <li class="categurys-itemes servis">لوازم و خدمات</li>
+              </ul>
+            </a>
+          </div>
+
+          <a href="#">بازگشت وجه خرید اینترنتی </a>
+          <a href="#">بازگشت وجه خرید حضوری</a>
+        </section>
+        <div class="left">
+          <a href="#" class="phone-app">کسب و کار من </a>
+          <a href="#" class="phone-app">
+            <img
+              class="phone-app-pic"
+              src="images/icon/phone.PNG"
+              alt="اپ موبایل"
+            />
+            دانلود اپلیکیشن</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container" id="mainContainer">
+      <h1 class="title">بلیط استخر تهران</h1>
+      <div class="center">
+        <div class="side">
+          <ul id="accardion" class="">
+            <li>
+              <input type="checkbox" id="c0" name="na" checked />
+              <label for="c0"> <span class="tip"> جستجو </span></label>
+              <div class="content">
+                <input
+                  class="search-store"
+                  id="searchSecond"
+                  type="text"
+                  placeholder="جستجو "
+                />
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" id="c1" name="na" checked />
+              <label for="c1"><span class="tip"> دسته بندی </span></label>
+              <div class="content cat">
+                <input id="cat1" type="radio" name="ca" />
+                <label for="cat1"> رستوران و کافه </label>
+
+                <input id="cat2" type="radio" name="ca" />
+                <label for="cat2"> تفریحی و ورزشی </label>
+
+                <input id="cat3" type="radio" name="ca" />
+                <label for="cat3"> تئاتر و هنر </label>
+
+                <input id="cat4" type="radio" name="ca" />
+                <label for="cat4"> پزشکی و سلامت </label>
+
+                <input id="cat5" type="radio" name="ca" />
+                <label for="cat5"> فروشگاه های اینترنتی </label>
+
+                <input id="cat6" type="radio" name="ca" />
+                <label for="cat6"> تور و سفر </label>
+
+                <input id="cat7" type="radio" name="ca" />
+                <label for="cat7"> زیبایی و آرایشی </label>
+
+                <input id="cat8" type="radio" name="ca" checked />
+                <label for="cat8"> همه </label>
+              </div>
+            </li>
+
+            <li>
+              <input type="checkbox" id="c4" name="na" />
+              <label for="c4"><span class="tip"> قیمت </span> </label>
+              <div class="content">
+                <output id="priFromOut"> 0 </output>
+                <span> از </span>
+                <input
+                  id="priFrom"
+                  type="range"
+                  min="0"
+                  max="1000000"
+                  step="10000"
+                  value="0"
+                />
+
+                <output id="priToOut"> 1000000 </output>
+                <span> تا </span>
+                <input
+                  id="priTo"
+                  type="range"
+                  min="0"
+                  max="1000000"
+                  step="10000"
+                  value="1000000"
+                />
+              </div>
+            </li>
+
+            <li>
+              <input type="checkbox" id="c3" name="na" />
+              <label for="c3"
+                ><span class="tip"> امتیاز فروشندگان</span>
+              </label>
+              <div class="content">
+                <div>
+                  <input id="star1" type="radio" name="na" checked />
+                  <label for="star1"> امتیاز 5 ستاره</label>
+                </div>
+                <div>
+                  <input id="star2" type="radio" name="na" />
+                  <label for="star2">امتیاز 4 ستاره به بالا</label>
+                </div>
+                <div>
+                  <input id="star3" type="radio" name="na" />
+                  <label for="star3"> امتیاز 3 ستاره به بالا</label>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="order">
+            <div class="order-right-child">
+              <div class="title">مرتب سازی براساس:</div>
+
+              <input id="sort" type="radio" name="sortGroup" checked />
+              <label for="sort"> پیش فرض </label>
+
+              <input id="cheapSort" type="radio" name="sortGroup" />
+              <label for="cheapSort"> ارزان ترین</label>
+
+              <input
+                id="expensiveSort"
+                type="radio"
+                name="sortGroup"
+                checked=""
+              />
+              <label for="expensiveSort"> گران ترین</label>
+
+              <input id="stockSort" type="radio" name="sortGroup" />
+              <label for="stockSort"> محبوب ترین </label>
+
+              <input id="priceSort" type="radio" name="sortGroup" />
+              <label for="priceSort"> بیشترین تخفیف </label>
+            </div>
+            <div class="order-left-child">
+              <div class="square"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="container-list" id="containerList">
+            <!-- <div class="items">
+              <img
+                class="itemsPicture"
+                src="images/pishnahadVizhe/01.png"
+                alt=""
+              />
+
+              <div class="itemsContent">
+                <p class="object">استخر یاس پاسداران</p>
+                <p class="group">تفریحی و ورزشی</p>
+                <p class="groupTypeFirst">استخر و ورزش های آبی</p>
+                <p class="groupTypeSecond">استخر سرپوشیده</p>
+
+                <div class="topItems">
+                  <span class="location">پاسداران</span>
+                  <span class="stock">4.1</span>
+                  <span class="sale">(334)</span>
+                </div>
+                <div class="bottomItems">
+                  <span class="buy">18319 خرید</span>
+                  <span class="price">30000</span>
+                  <span class="discount">23400 تومان</span>
+                  <span class="discountPercent">22%</span>
+
+                  <a href="cart.html" class="property" onclick="showBasket(1)">
+                    خرید</a
+                  >
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="modal" class="hide">
+      <div class="ticket">
+        <p class="sabad">سبد خرید</p>
+
+        <div class="itemParent" id="itemParent">
+          <!-- <div class="item">
+            <span class="pic"></span>
+            <span class="name"> سانس آزاد استخر یاس ویژه بانوان</span>
+            <div class="number">
+              <button class="plus">+</button>
+              <p class="number-text">1</p>
+              <button class="mines">-</button>
+            </div>
+            <div class="money">
+              <span class="off">234000 تومان</span>
+              <span class="price">300000 تومان</span>
+            </div>
+            <span class="delete"></span>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="short">
+        <div class="short-box">
+          <div class="top">
+            <div class="price-box">
+              <span>مبلغ قابل پرداخت</span>
+              <span class="price" id="TotalPriceForPay">234000 تومان</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <button class="buy">خرید</button>
+          </div>
+        </div>
+      </div>
+      <div class="closeModal" id="closeModal"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="first-child-footer">
+        <div class="title">
+          <h3>از آخرین تخفیفان ها مطلع باشید</h3>
+          <p>با وارد کردن ایمیل خود آخرین تخفیفان های شهرتان را دریافت کنید</p>
+        </div>
+        <div class="sub">
+          <div class="sub-search">
+            <div class="sub-location">
+              <span>تهران</span>
+              <span class="sub-location-click">
+                <div class="sub-location-city">
+                  <span>تهران</span>
+                  <span>ساری</span>
+                  <span>مشهد</span>
+                  <span>اصفهان</span>
+                  <span>کرج</span>
+                  <span>کیش</span>
+                </div>
+              </span>
+            </div>
+
+            <input
+              id="sub-searchCk"
+              type="text"
+              placeholder="example@gmail.com"
+            />
+
+            <div class="sub-search-button">
+              <button>اشتراک</button>
+            </div>
+          </div>
+        </div>
+        <div class="medal"></div>
+      </div>
+
+      <div class="second-child-footer">
+        <div class="about">
+          <div class="about-child">
+            <h4>درباره تخفیفان</h4>
+            <a href="#">درباره ما </a>
+            <a href="#">تماس با ما </a>
+          </div>
+          <div class="about-child">
+            <h4>همکاری با تخفیفان</h4>
+            <a href="#">فرصت های شغلی </a>
+            <a href="#">کسب و کار خود را تبلیغ کنید </a>
+            <a href="#">خدمات سازمانی </a>
+          </div>
+          <div class="about-child">
+            <h4>بیشتر بخوانید</h4>
+            <a href="#">تخفیفان چگونه کار می کند </a>
+          </div>
+        </div>
+        <div class="app">
+          <div class="right-child">
+            <h4>دریافت اپلیکیشن</h4>
+            <a href="#" class="android">دانلود نسخه اندروید</a>
+            <a href="#" class="ios">ios دانلود نسخه </a>
+          </div>
+          <div class="left-child"></div>
+        </div>
+      </div>
+      <div class="third-child-footer">
+        <div class="social">
+          <div class="social-logo in"></div>
+          <div class="social-logo twiter"></div>
+          <div class="social-logo facebook"></div>
+          <div class="social-logo telegram"></div>
+          <div class="social-logo insta"></div>
+          <div class="phone">+989027787676</div>
+          <div class="email">SUPPORT@TAKHFIFAN.COM</div>
+        </div>
+      </div>
+      <div class="forth-child-footer">
+        <div class="right">
+          <h4>حس خوب هیجان، با تخفیف‌های روزانه تخفیفان</h4>
+          <p>
+            تخفیفان پلتفرمی برای ارتباط بین مراکز خدماتی و فروشندگان با مشتریان
+            است. تخفیفان به مشتریان خود تجربه‌ای جدید و هوشمندانه در خرید کردن
+            ارائه می‌کند و باعث رونق کسب‌وکار شرکای تجاری خود می‌شود. شما چه به
+            دنبال یک خرید آنلاین یا خرید از مغازه‌های نزدیک محل سکونت خود باشید
+            و چه به دنبال یک تجربه خاص، چشیدن یک طعم متفاوت یا یادگیری چیزاهای
+            جدید باشید، با تخفیفان یک خرید هوشمندانه و با قیمت مناسب را تجربه
+            خواهید کرد. امروز تخفیفان در نقطه‌ای قرار گرفته که می‌تواند روی
+            تفریح و خرید شما تاثیر گذار باشد. با تخفیفان حتی می‌توانید خرید از
+            میوه فروشی‌ها و داروخانه‌های سطح شهر را هم به خریدی هوشمندانه تبدیل
+            کنید! تخفیفان پلفترمی گسترده در ارائه انواع پیشنهادها است که خدمات
+            خود را در چندین شهر بزرگ ایران ارائه می‌دهد. با نصب سوپر اَپ تخفیفان
+            می‌توانید از همه پیشنهادهای جذاب و جدید اطراف خود و فروشگاه‌های
+            اینترنتی با خبر باشید. تخفیفان در روز ده‌ها تخفیف ویژه و جذاب
+            برایتان دارد و شما می‌توانید از تخفیف های چهل تا صد درصدی استفاده
+            کنید. برخی از دسته‌های محبوب تخفیفان، رستوران های تهران، هتل، تور
+            مسافرتی، کافی‌شاپ، آرایشگاه، کلینیک زیبایی، آتلیه، بلیط تئاتر بازی
+            اتاق فرار و کد تخفیف هستند. از محبوب ترین کد های تخفیفی که در
+            تخفیفان ارائه می شود می توان به کد تخفیف دیجی کالا، کد تخفیف اسنپ
+            فود، کد تخفیف فیلیمو و کد تخفیف نماوا اشاره کرد. همچنین برای ارائه
+            خدمات بهتر هر یک از قسمت‌های تخفیفان به دسته‌بندی‌های کوچک‌تری همچون
+            تخفیف رستوران سنتی و ایرانی، رستوران با موسیقی زنده، کافی‌شاپ،
+            صبحانه، بوفه نهار و شام، بلیط استخر، باشگاه بدن‌سازی، شهربازی،
+            توچال، تئاتر کودک، تئاتر کمدی، پینت بال، برج میلاد، لیزر موهای زائد،
+            تور و هتل مشهد، هتل شمال و سایر هتل‌ها تقسیم شده است. تخفیفان علاوه
+            بر تهران در شهرهای مشهد، تبریز، اصفهان، کرج، شیراز و استان مازندران
+            نیز فعالیت دارد.
+          </p>
+        </div>
+        <div class="left"></div>
+      </div>
+      <div class="fives-child-footer">تخفیفان 1402 - ساخته شده با عشق</div>
+    </footer>
+
+    <script src="js/all.js"></script>
+
+    <script src="js/cart.js"></script>
+  </body>
+</html>

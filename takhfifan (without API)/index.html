@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>تخفیفان</title>
+
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+
+    <script src="js/slider.js"></script>
+  </head>
+  <body>
+    <header class="headers">
+      <div class="top-header">
+        <div class="logo">
+          <div>
+            <img src="images/logo/logoTakhfifan.png" alt="لوگوی سایت" />
+          </div>
+        </div>
+
+        <div class="search">
+          <div class="location">
+            <span class="location-pic"></span>
+            <span>تهران</span>
+            <span class="location-click">
+              <div class="location-city">
+                <span>تهران</span>
+                <span>ساری</span>
+                <span>مشهد</span>
+                <span>اصفهان</span>
+                <span>کرج</span>
+                <span>کیش</span>
+              </div>
+            </span>
+          </div>
+
+          <input
+            id="searchCk"
+            type="text"
+            placeholder="جستجو : رستوران،باشگاه انقلاب..."
+          />
+
+          <div class="search-button">
+            <button></button>
+          </div>
+        </div>
+
+        <div class="login">
+          <span>ثبت نام</span>
+          <span>/</span>
+          <span>ورود</span>
+          <span class="login-pic"></span>
+        </div>
+        <div class="basket">
+          <img src="images/icon/basket2.png" alt="سبد خرید" />
+          <span class="basket-num">0</span>
+        </div>
+      </div>
+      <nav class="bottom-header">
+        <section class="right">
+          <div class="categury">
+            <div class="categurys-line"></div>
+            <a href="service.html" class="categurys-option">
+              همه دسته‌ بندی‌ها
+              <ul class="categurys-box">
+                <li class="categurys-itemes game">
+                  تفریح و ورزش
+                  <ul class="categurys-box-child">
+                    <li class="categurys-itemes-child">استخر</li>
+                    <li class="categurys-itemes-child">شهر بازی</li>
+                    <li class="categurys-itemes-child">اتاق فرار</li>
+                    <li class="categurys-itemes-child">بازی‌ های گروهی</li>
+                    <li class="categurys-itemes-child">ورزش‌ های هوایی</li>
+                    <li class="categurys-itemes-child">باشگاه ورزشی</li>
+                  </ul>
+                </li>
+                <li class="categurys-itemes food">رستوران و کافه</li>
+                <li class="categurys-itemes art">تئاتر و هنر</li>
+                <li class="categurys-itemes medical">پزشکی و سلامت</li>
+                <li class="categurys-itemes online">فروشگاه های و اینترنتی</li>
+                <li class="categurys-itemes ofline">فروشگاه های و حضوری</li>
+                <li class="categurys-itemes travel">تور و سفر</li>
+                <li class="categurys-itemes make-up">زیبایی و آرایش</li>
+                <li class="categurys-itemes servis">لوازم و خدمات</li>
+              </ul>
+            </a>
+          </div>
+
+          <a href="service.html">بازگشت وجه خرید اینترنتی </a>
+          <a href="service.html">بازگشت وجه خرید حضوری</a>
+        </section>
+        <div class="left">
+          <a href="service.html" class="phone-app">کسب و کار من </a>
+          <a href="service.html" class="phone-app">
+            <img
+              class="phone-app-pic"
+              src="images/icon/phone.PNG"
+              alt="اپ موبایل"
+            />
+            دانلود اپلیکیشن</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <header class="main">
+        <div class="slider">
+          <div id="slider">
+            <div id="gal">
+              <a href="service.html" class="items">
+                <img src="images/slider/01.jpg" alt="اسلایدر 1" />
+              </a>
+              <a href="service.html" class="items">
+                <img src="images/slider/02.jpg" alt="اسلایدر 2" />
+              </a>
+              <a href="service.html" class="items">
+                <img src="images/slider/03.jpg" alt="اسلایدر 3" />
+              </a>
+              <a href="service.html" class="items">
+                <img src="images/slider/04.jpg" alt="اسلایدر 4" />
+              </a>
+              <a href="service.html" class="items">
+                <img src="images/slider/05.jpg" alt="اسلایدر 5" />
+              </a>
+              <a href="service.html" class="items">
+                <img src="images/slider/06.jpg" alt="اسلایدر 6" />
+              </a>
+              <a href="service.html" class="items">
+                <img src="images/slider/07.jpg" alt="اسلایدر 7" />
+              </a>
+              <a href="service.html" class="items">
+                <img src="images/slider/08.jpg" alt="اسلایدر 8" />
+              </a>
+              <a href="service.html" class="items">
+                <img src="images/slider/09.jpg" alt="اسلایدر 9" />
+              </a>
+            </div>
+
+            <div id="right"></div>
+            <div id="left"></div>
+
+            <ul id="but">
+              <li class="sel" onclick="changeAll(0)"></li>
+              <li onclick="changeAll(1)"></li>
+              <li onclick="changeAll(2)"></li>
+              <li onclick="changeAll(3)"></li>
+              <li onclick="changeAll(4)"></li>
+              <li onclick="changeAll(5)"></li>
+              <li onclick="changeAll(6)"></li>
+              <li onclick="changeAll(8)"></li>
+              <li onclick="changeAll(9)"></li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="service.html" class="advertise first-ad">
+          <img src="images/tabligh/01.jpg" alt="1 تبلیغات" />
+        </a>
+        <a href="service.html" class="advertise second-ad">
+          <img src="images/tabligh/02.jpg" alt="2 تبلیغات" />
+        </a>
+        <a href="service.html" class="advertise third-ad">
+          <img src="images/tabligh/03.jpg" alt="3 تبلیغات" />
+        </a>
+        <a href="service.html" class="advertise forth-ad">
+          <img src="images/tabligh/04.jpg" alt="4 تبلیغات" />
+        </a>
+        <a href="service.html" class="advertise fives-ad">
+          <img src="images/tabligh/05.jpg" alt="5 تبلیغات" />
+        </a>
+        <a href="service.html" class="advertise sixes-ad">
+          <img src="images/tabligh/06.jpg" alt="6 تبلیغات" />
+        </a>
+        <a href="service.html" class="advertise sevens-ad">
+          <img src="images/tabligh/07.jpg" alt="7 تبلیغات" />
+        </a>
+      </header>
+
+      <section class="container">
+        <div class="offers">
+          <h2 class="offer-title">پیشنهادهای ویژه</h2>
+          <a href="service.html" ="service.html" class="offer-continue"
+            >مشاهده همه</a
+          >
+
+          <div class="offers-items">
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/01.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">نمایش کمدی موزیکال</h3>
+                  <span class="city">پوتک</span>
+                  <span class="stock">3</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    60%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+
+              <span class="buy">235 خرید</span>
+            </a>
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/02.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">شهربازی فان تایم</h3>
+                  <span class="city">تجریش</span>
+                  <span class="stock">5</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    54%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+              <span class="buy">27 خرید</span>
+            </a>
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/03.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">باغ ملی گیاهشناسی</h3>
+                  <span class="city">چیتگر</span>
+                  <span class="stock">4</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    26%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+              <span class="buy">60 خرید</span>
+            </a>
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/04.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">تله سیژ دربند</h3>
+                  <span class="city">دربند</span>
+                  <span class="stock">3</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    10%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+              <span class="buy">73 خرید</span>
+            </a>
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/05.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">تله کابین توچال</h3>
+                  <span class="city">توچال</span>
+                  <span class="stock">2</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    12%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+              <span class="buy">140 خرید</span>
+            </a>
+          </div>
+        </div>
+
+        <nav class="ads">
+          <a href="service.html" class="ads-items">
+            <img class="ads-img" src="images/advertse1/01.jpg" alt="" />
+          </a>
+          <a href="service.html" class="ads-items">
+            <img class="ads-img" src="images/advertse1/02.jpg" alt="" />
+          </a>
+          <a href="service.html" class="ads-items">
+            <img class="ads-img" src="images/advertse1/03.jpg" alt="" />
+          </a>
+          <a href="service.html" class="ads-items">
+            <img class="ads-img" src="images/advertse1/04.jpg" alt="" />
+          </a>
+        </nav>
+
+        <div class="offers">
+          <h2 class="offer-title">استخرهای پرطرفدار</h2>
+          <a href="service.html" class="offer-continue">مشاهده همه</a>
+
+          <div class="offers-items">
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/06.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">استخر سید جلال حسینی</h3>
+                  <span class="city">کن</span>
+                  <span class="stock">1</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    90%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+
+              <span class="buy">2 خرید</span>
+            </a>
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/07.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">استخر روباز هتل اوپن</h3>
+                  <span class="city">اوپن</span>
+                  <span class="stock">3</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    32%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+              <span class="buy">12 خرید</span>
+            </a>
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/08.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">استخر روباز ولنجک</h3>
+                  <span class="city">ولنجک</span>
+                  <span class="stock">4</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    15%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+              <span class="buy">90 خرید</span>
+            </a>
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/09.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">مجموعه ورزشی سهروردی</h3>
+                  <span class="city">سهروردی</span>
+                  <span class="stock">5</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    30%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+              <span class="buy">42 خرید</span>
+            </a>
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/10.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">استخر مجموعه زیتون</h3>
+                  <span class="city">شهرک غرب</span>
+                  <span class="stock">5</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    72%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+              <span class="buy">750 خرید</span>
+            </a>
+          </div>
+        </div>
+
+        <nav class="ads">
+          <a href="service.html" class="ads-items">
+            <img class="ads-img" src="images/advertse1/05.jpg" alt="" />
+          </a>
+          <a href="service.html" class="ads-items">
+            <img class="ads-img" src="images/advertse1/06.jpg" alt="" />
+          </a>
+          <a href="service.html" class="ads-items">
+            <img class="ads-img" src="images/advertse1/07.jpg" alt="" />
+          </a>
+          <a href="service.html" class="ads-items">
+            <img class="ads-img" src="images/advertse1/08.jpg" alt="" />
+          </a>
+        </nav>
+
+        <div class="web-shop">
+          <h2 class="shop-title">هر چی می‌خوای بخر، پولت رو پس بگیر</h2>
+          <p class="shop-explain">
+            با بازگشت وجه می‌توانید هوشمندانه‌تر خرید کنید! با خرید کردن از
+            بازگشت وجه، بخشی از خرید خود را می‌توانید از تخفیفان به صورت نقدی
+            دریافت کنید.
+          </p>
+
+          <div class="shop-site">
+            <div class="shop-items">
+              <a href="service.html" class="shop-items-logo">
+                <img
+                  class="shop-items-img"
+                  src="images/shopingSite/01.PNG"
+                  alt=""
+                />
+              </a>
+              <div>
+                <p>دیجی کالا</p>
+                <p>تا 6% بازگشت وجه</p>
+              </div>
+            </div>
+            <div class="shop-items">
+              <a href="service.html" class="shop-items-logo">
+                <img
+                  class="shop-items-img"
+                  src="images/shopingSite/06.PNG"
+                  alt=""
+                />
+              </a>
+              <div>
+                <p>دیجی جت</p>
+                <p>تا 15% بازگشت وجه</p>
+              </div>
+            </div>
+            <div class="shop-items">
+              <a href="service.html" class="shop-items-logo">
+                <img
+                  class="shop-items-img"
+                  src="images/shopingSite/02.PNG"
+                  alt=""
+                />
+              </a>
+              <div>
+                <p>دیجی استایل</p>
+                <p>تا 20% بازگشت وجه</p>
+              </div>
+            </div>
+            <div class="shop-items">
+              <a href="service.html" class="shop-items-logo">
+                <img
+                  class="shop-items-img"
+                  src="images/shopingSite/03.PNG"
+                  alt=""
+                />
+              </a>
+              <div>
+                <p>نماوا</p>
+                <p>تا 2% بازگشت وجه</p>
+              </div>
+            </div>
+            <div class="shop-items">
+              <a href="service.html" class="shop-items-logo">
+                <img
+                  class="shop-items-img"
+                  src="images/shopingSite/04.PNG"
+                  alt=""
+                />
+              </a>
+              <div>
+                <p>خانومی</p>
+                <p>تا 18% بازگشت وجه</p>
+              </div>
+            </div>
+            <div class="shop-items">
+              <a href="service.html" class="shop-items-logo">
+                <img
+                  class="shop-items-img"
+                  src="images/shopingSite/05.PNG"
+                  alt=""
+                />
+              </a>
+              <div>
+                <p>تکنولایف</p>
+                <p>تا 4% بازگشت وجه</p>
+              </div>
+            </div>
+          </div>
+          <div class="continue">مشاهده همه</div>
+        </div>
+
+        <div class="web-shop-second">
+          <div class="main">
+            <div class="web-shop-information">
+              <div class="second-web-shop-information">
+                <span
+                  >از فروشـــــــــــــــگاه‌های محلی به‌صورت حضوری خرید
+                  کن</span
+                >
+                <span>بخشی از مبلغ پرداختی رو پاداش نقدی بگیر</span>
+              </div>
+              <div class="first-web-shop-information">
+                <span>بازگشـــت</span>
+                <span>وجـــــــــــه</span>
+              </div>
+            </div>
+            <img
+              class="web-shop-second-pic"
+              src="images/accar/phone2.png"
+              alt=""
+            />
+
+            <div class="web-shop-site">
+              <div class="box">
+                <div class="web-shop-logo part1"></div>
+                <div class="web-shop-text">
+                  <span>دیجی کالا</span>
+                  <span>1% بازگشت وجه</span>
+                </div>
+                <div class="number">600 شعبه</div>
+              </div>
+              <div class="box">
+                <div class="web-shop-logo part2"></div>
+                <div class="web-shop-text">
+                  <span> دیجی استایل</span>
+                  <span>15% بازگشت وجه</span>
+                </div>
+                <div class="number">100 شعبه</div>
+              </div>
+              <div class="box">
+                <div class="web-shop-logo part3"></div>
+                <div class="web-shop-text">
+                  <span> نماوا</span>
+                  <span>9% بازگشت وجه</span>
+                </div>
+                <div class="number">400 شعبه</div>
+              </div>
+              <div class="box">
+                <div class="web-shop-logo part4"></div>
+                <div class="web-shop-text">
+                  <span> خانومی</span>
+                  <span>7% بازگشت وجه</span>
+                </div>
+                <div class="number">50 شعبه</div>
+              </div>
+              <div class="box">
+                <div class="web-shop-logo part5"></div>
+                <div class="web-shop-text">
+                  <span>دیجی کالا</span>
+                  <span>1% بازگشت وجه</span>
+                </div>
+                <div class="number">600 شعبه</div>
+              </div>
+              <div class="box">
+                <div class="web-shop-logo part6"></div>
+                <div class="web-shop-text">
+                  <span>دیجی جت</span>
+                  <span>4% بازگشت وجه</span>
+                </div>
+                <div class="number">200 شعبه</div>
+              </div>
+              <div class="box">
+                <div class="web-shop-logo part7"></div>
+                <div class="web-shop-text">
+                  <span>دیجی کالا</span>
+                  <span>1% بازگشت وجه</span>
+                </div>
+                <div class="number">600 شعبه</div>
+              </div>
+              <div class="box">
+                <div class="web-shop-logo part8"></div>
+                <div class="web-shop-text">
+                  <span>دیجی کالا</span>
+                  <span>1% بازگشت وجه</span>
+                </div>
+                <div class="number">600 شعبه</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="offers">
+          <h2 class="offer-title">استخرهای پرطرفدار</h2>
+          <a href="service.html" class="offer-continue">مشاهده همه</a>
+
+          <div class="offers-items">
+            <a href="service.html" class="items items-background">
+              <h2>حس خوب زیبایی</h2>
+              <div>مشاهده همه</div>
+            </a>
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/07.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">استخر روباز هتل اوپن</h3>
+                  <span class="city">اوپن</span>
+                  <span class="stock">3</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    32%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+              <span class="buy">12 خرید</span>
+            </a>
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/08.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">استخر روباز ولنجک</h3>
+                  <span class="city">ولنجک</span>
+                  <span class="stock">4</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    15%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+              <span class="buy">90 خرید</span>
+            </a>
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/09.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">مجموعه ورزشی سهروردی</h3>
+                  <span class="city">سهروردی</span>
+                  <span class="stock">5</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    30%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+              <span class="buy">42 خرید</span>
+            </a>
+            <a href="service.html" class="items">
+              <img
+                class="items-pic"
+                src="images/pishnahadVizhe/10.png"
+                alt=""
+              />
+
+              <div class="center-items">
+                <div class="right">
+                  <h3 class="items-title">استخر مجموعه زیتون</h3>
+                  <span class="city">شهرک غرب</span>
+                  <span class="stock">5</span>
+                </div>
+
+                <div class="left">
+                  <h3 class="discount">
+                    <span>تا</span>
+                    72%
+                    <span>تخفیف</span>
+                  </h3>
+                </div>
+              </div>
+
+              <p class="bottom-items">مشاهده پیشنهادها</p>
+              <span class="buy">750 خرید</span>
+            </a>
+          </div>
+        </div>
+
+        <nav class="ads-twoPart">
+          <a href="service.html" class="ads-items">
+            <img class="ads-img" src="images/tabligh/08.jpg" alt="" />
+          </a>
+          <a href="service.html" class="ads-items">
+            <img class="ads-img" src="images/tabligh//09.jpg" alt="" />
+          </a>
+        </nav>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="first-child-footer">
+        <div class="title">
+          <h3>از آخرین تخفیفان ها مطلع باشید</h3>
+          <p>با وارد کردن ایمیل خود آخرین تخفیفان های شهرتان را دریافت کنید</p>
+        </div>
+        <div class="sub">
+          <div class="sub-search">
+            <div class="sub-location">
+              <span>تهران</span>
+              <span class="sub-location-click">
+                <div class="sub-location-city">
+                  <span>تهران</span>
+                  <span>ساری</span>
+                  <span>مشهد</span>
+                  <span>اصفهان</span>
+                  <span>کرج</span>
+                  <span>کیش</span>
+                </div>
+              </span>
+            </div>
+
+            <input
+              id="sub-searchCk"
+              type="text"
+              placeholder="example@gmail.com"
+            />
+
+            <div class="sub-search-button">
+              <button>اشتراک</button>
+            </div>
+          </div>
+        </div>
+        <div class="medal"></div>
+      </div>
+
+      <div class="second-child-footer">
+        <div class="about">
+          <div class="about-child">
+            <h4>درباره تخفیفان</h4>
+            <a href="service.html">درباره ما </a>
+            <a href="service.html">تماس با ما </a>
+          </div>
+          <div class="about-child">
+            <h4>همکاری با تخفیفان</h4>
+            <a href="service.html">فرصت های شغلی </a>
+            <a href="service.html">کسب و کار خود را تبلیغ کنید </a>
+            <a href="service.html">خدمات سازمانی </a>
+          </div>
+          <div class="about-child">
+            <h4>بیشتر بخوانید</h4>
+            <a href="service.html">تخفیفان چگونه کار می کند </a>
+          </div>
+        </div>
+        <div class="app">
+          <div class="right-child">
+            <h4>دریافت اپلیکیشن</h4>
+            <a href="service.html" class="android">دانلود نسخه اندروید</a>
+            <a href="service.html" class="ios">ios دانلود نسخه </a>
+          </div>
+          <div class="left-child"></div>
+        </div>
+      </div>
+      <div class="third-child-footer">
+        <div class="social">
+          <div class="social-logo in"></div>
+          <div class="social-logo twiter"></div>
+          <div class="social-logo facebook"></div>
+          <div class="social-logo telegram"></div>
+          <div class="social-logo insta"></div>
+          <div class="phone">+989027787676</div>
+          <div class="email">SUPPORT@TAKHFIFAN.COM</div>
+        </div>
+      </div>
+      <div class="forth-child-footer">
+        <div class="right">
+          <h4>حس خوب هیجان، با تخفیف‌های روزانه تخفیفان</h4>
+          <p>
+            تخفیفان پلتفرمی برای ارتباط بین مراکز خدماتی و فروشندگان با مشتریان
+            است. تخفیفان به مشتریان خود تجربه‌ای جدید و هوشمندانه در خرید کردن
+            ارائه می‌کند و باعث رونق کسب‌وکار شرکای تجاری خود می‌شود. شما چه به
+            دنبال یک خرید آنلاین یا خرید از مغازه‌های نزدیک محل سکونت خود باشید
+            و چه به دنبال یک تجربه خاص، چشیدن یک طعم متفاوت یا یادگیری چیزاهای
+            جدید باشید، با تخفیفان یک خرید هوشمندانه و با قیمت مناسب را تجربه
+            خواهید کرد. امروز تخفیفان در نقطه‌ای قرار گرفته که می‌تواند روی
+            تفریح و خرید شما تاثیر گذار باشد. با تخفیفان حتی می‌توانید خرید از
+            میوه فروشی‌ها و داروخانه‌های سطح شهر را هم به خریدی هوشمندانه تبدیل
+            کنید! تخفیفان پلفترمی گسترده در ارائه انواع پیشنهادها است که خدمات
+            خود را در چندین شهر بزرگ ایران ارائه می‌دهد. با نصب سوپر اَپ تخفیفان
+            می‌توانید از همه پیشنهادهای جذاب و جدید اطراف خود و فروشگاه‌های
+            اینترنتی با خبر باشید. تخفیفان در روز ده‌ها تخفیف ویژه و جذاب
+            برایتان دارد و شما می‌توانید از تخفیف های چهل تا صد درصدی استفاده
+            کنید. برخی از دسته‌های محبوب تخفیفان، رستوران های تهران، هتل، تور
+            مسافرتی، کافی‌شاپ، آرایشگاه، کلینیک زیبایی، آتلیه، بلیط تئاتر بازی
+            اتاق فرار و کد تخفیف هستند. از محبوب ترین کد های تخفیفی که در
+            تخفیفان ارائه می شود می توان به کد تخفیف دیجی کالا، کد تخفیف اسنپ
+            فود، کد تخفیف فیلیمو و کد تخفیف نماوا اشاره کرد. همچنین برای ارائه
+            خدمات بهتر هر یک از قسمت‌های تخفیفان به دسته‌بندی‌های کوچک‌تری همچون
+            تخفیف رستوران سنتی و ایرانی، رستوران با موسیقی زنده، کافی‌شاپ،
+            صبحانه، بوفه نهار و شام، بلیط استخر، باشگاه بدن‌سازی، شهربازی،
+            توچال، تئاتر کودک، تئاتر کمدی، پینت بال، برج میلاد، لیزر موهای زائد،
+            تور و هتل مشهد، هتل شمال و سایر هتل‌ها تقسیم شده است. تخفیفان علاوه
+            بر تهران در شهرهای مشهد، تبریز، اصفهان، کرج، شیراز و استان مازندران
+            نیز فعالیت دارد.
+          </p>
+        </div>
+        <div class="left"></div>
+      </div>
+      <div class="fives-child-footer">تخفیفان 1402 - ساخته شده با عشق</div>
+    </footer>
+
+    <script>
+      let pos = 0;
+
+      right.onclick = go_right;
+
+      left.onclick = go_left;
+
+      const buts = document.querySelectorAll("#slider > #but > li");
+
+      let s;
+      play();
+
+      slider.onmouseover = function () {
+        pause();
+      };
+      slider.onmouseout = function () {
+        play();
+      };
+    </script>
+  </body>
+</html>

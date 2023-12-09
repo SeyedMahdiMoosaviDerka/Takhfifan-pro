@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: iranSans;
+  src: url("../fonts/IranSans.ttf");
+}
+body {
+  margin-top: 100px;
+  direction: rtl;
+  font-family: iranSans;
+  font-size: 14px;
+}
+
+.offers {
+  width: 100%;
+  height: 320px;
+  border: 1px solid black;
+}
+
+.offers > .offer-title {
+  display: inline-block;
+  padding: 25px 20px;
+  color: #3c3c3c;
+  font-size: 18px;
+}
+.offers > .offer-continue {
+  float: left;
+  padding: 25px 44px;
+  text-decoration: none;
+  color: #646464;
+  font-size: 14px;
+  position: relative;
+}
+.offers > .offer-continue::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 25px;
+  left: 14px;
+  background: url("../images/accar/right.png");
+  background-size: 90%;
+}
+
+.offers > .offers-items {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 230px;
+  padding: 0 20px;
+}
+.offers > .offers-items > .items {
+  width: 20%;
+  height: 100%;
+  border: 1px solid #e3e3e3;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  text-decoration: none;
+}
+.items > .items-pic {
+  height: 50%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.items > .center-items {
+  display: flex;
+  flex-flow: row wrap;
+  height: 30%;
+  width: 100%;
+  border-bottom: 1px dashed #e3e3e3;
+
+  padding-right: 5px;
+  /* background-color: red; */
+}
+.items > .center-items > .right {
+  width: 70%;
+  height: 100%;
+  border-left: 1px dashed #e3e3e3;
+}
+.right > .items-title {
+  font-size: 13px;
+  line-height: 16px;
+  height: 55%;
+  margin-top: 8px;
+  color: #3c3c3cc8;
+}
+.right > span {
+  font-size: 12px;
+  color: #3c3c3cab;
+}
+.right > .stock {
+  margin-right: 20px;
+  position: relative;
+}
+.right > .stock::after {
+  content: "";
+  background: url("../images/icon/star.PNG") no-repeat 50%;
+  background-size: 70%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+}
+.items > .center-items > .left {
+  width: 30%;
+  height: 100%;
+}
+.left > .discount {
+  color: #3c3c3cc8;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 12px;
+}
+.discount > span {
+  font-size: 10px;
+}
+.items > .bottom-items {
+  height: 20%;
+  width: 100%;
+  /* background-color: blue; */
+  border-radius: 0 0 20px 20px;
+  direction: ltr;
+  font-size: 10px;
+  padding: 15px 0 0 25px;
+  position: relative;
+}
+
+.items > .bottom-items::after {
+  content: "";
+  background: red url("../images/accar/right.png");
+  background-size: 80%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 14px;
+  left: 5px;
+}

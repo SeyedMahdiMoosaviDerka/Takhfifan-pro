@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: iranSans;
+  src: url("../fonts/IranSans.ttf");
+}
+
+@font-face {
+  font-family: iranyekan;
+  src: url("../fonts/Yekan.ttf");
+}
+
+@font-face {
+  font-family: mj;
+  src: url("../fonts/Mj flow.ttf");
+}
+
+body {
+  direction: rtl;
+  font-family: "iranSans";
+  font-size: 14px;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: 600;
+}

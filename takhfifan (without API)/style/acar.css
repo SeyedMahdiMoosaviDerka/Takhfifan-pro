@@ -1,0 +1,117 @@
+#accardion {
+  /* width: 400px; */
+  padding: 8px;
+  direction: rtl;
+  margin: 0;
+  list-style: none;
+  color: #333;
+  /* font-family: mj; */
+}
+#accardion > li {
+  background: #fff;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 1px 1px 7px #d8d8d8;
+}
+#accardion > li > input {
+  display: none;
+}
+
+#accardion > li > input:checked + label {
+  background-image: url("../images/accar/right.png");
+}
+#accardion > li > input:checked ~ .content {
+  height: 120px;
+  padding-top: 7px;
+}
+
+#accardion > li > input:checked ~ .cat {
+  height: 310px;
+}
+
+#accardion > li > label {
+  padding: 15px 30px 15px 15px;
+  display: block;
+  background: url("../images/accar/up.png") no-repeat 5% 50%;
+  background-size: 20px;
+  cursor: pointer;
+}
+#accardion > li > .content {
+  height: 0px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+#accardion > li > .content > input[type="range"] {
+  appearance: none;
+  background: #eee;
+  width: 90%;
+  height: 5px;
+  /* margin: 15px 40px; */
+  display: block;
+  margin: 0 10px 20px 0;
+  cursor: pointer;
+  border-left: 1px solid #29334f;
+  border-right: 1px solid #29334f;
+
+  background: rgb(255, 212, 212);
+}
+#accardion > li > .content > input[type="range"]::-moz-range-thumb {
+  background: blue;
+  border: 0 none;
+  cursor: pointer;
+}
+#accardion > li > .content > output {
+  display: block;
+  text-align: center;
+  color: blue;
+}
+#accardion > li > .content > span {
+  position: relative;
+  top: -15px;
+  right: 50px;
+}
+#accardion > li > .content > input[type="radio"]:checked + label {
+  background-image: url("../images/accar/ch03ho.png");
+}
+
+#accardion > li > .content > input[type="radio"] {
+  display: none;
+}
+#accardion > li > .content > label {
+  display: block;
+  margin: 10px;
+  padding: 5px 40px;
+  font-family: sans;
+  background: url("../images/accar/ch03un.png") no-repeat 100% 50%;
+  background-size: 18px;
+  color: #333;
+  cursor: pointer;
+}
+#accardion > li > .content > div {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+#accardion > li > .content > div > input[type="radio"] {
+  display: none;
+}
+
+#accardion > li > .content > div > label {
+  display: block;
+  width: 100%;
+  padding-right: 10px;
+  font-family: sans;
+  background: url("../images/accar/ch03un.png") no-repeat 100%;
+  background-size: 18px;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+}
+
+#accardion > li > .content > div > input[type="radio"]:checked ~ label {
+  background-image: url("../images/accar/ch03.png");
+}
